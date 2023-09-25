@@ -1,0 +1,30 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    background-color: darkslategrey;
+    color: white;
+}
+title{
+    font-size:large;
+    background-color: green;
+}
+nav{
+    font-size: small;
+}
+
+.container {
+    display: flex; /* Estabelece um layout flexível */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+}
+      
+.texto-ao-lado {
+    margin-left: 10px; /* Espaço entre a imagem e o texto */
+}
+
+.container img {
+    max-width: 40%; /* Largura máxima das imagens */
+}
+.container p {
+    flex: 1; /* Permite que o texto ocupe o espaço restante */
+    padding: 0 20px; /* Espaçamento entre o texto e as imagens */
+}
