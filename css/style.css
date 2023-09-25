@@ -4,13 +4,6 @@
     background-color: darkslategrey;
     color: white;
 }
-title{
-    font-size:large;
-    background-color: green;
-}
-nav{
-    font-size: small;
-}
 
 .container {
     display: flex; /* Estabelece um layout flexível */
