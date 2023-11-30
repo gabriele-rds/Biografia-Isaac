@@ -35,3 +35,6 @@ input[type="number"] {
     height: auto; /* Altura automática para manter a proporção */
     margin-left: 20px; /* Espaço à esquerda da imagem */
 }
+p {
+    font-size: 18px; /* Especifique o tamanho da fonte desejado */
+}
