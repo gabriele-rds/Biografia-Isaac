@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo da Força</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <a href="historia.html">História</a>
+        <a href="Index.html">Descobertas</a>
+        <a href="premios.html">Prêmios</a>
+        <a href="Formulas.html">Fórmula</a>
+        
+    </nav>
+    <!-- Seção explicativa sobre a Segunda Lei de Newton -->
+    <h2>Segunda Lei de Newton</h2>
+    <p>
+        A segunda lei de Newton é uma das leis fundamentais da física que descreve a relação entre a força aplicada a um objeto, sua massa e a aceleração resultante que o objeto adquire. É expressa pela fórmula matemática: 
+        <br>
+        F = m * a
+        <br>
+        Onde:
+        <br>
+        F representa a força aplicada a um objeto que tem sua unidade de medida em
+        Newton(N).
+        <br>
+        m é a massa do objeto que tem como unidade de medida em quilograma (kg)
+        <br>
+        a é a aceleração que o objeto adquire como resultado da aplicação da força que tem
+        como unidade de medida o metro por segundo quadrado (m/s^2)
+        <br>
+        Esta lei é essencial para compreender o movimento de objetos sob a influência de forças.
+    </p>
+    <!-- Campos de entrada para massa e aceleração -->
+    <div>
+        <label for="massInput">Massa (m):</label>
+        <input type="number" id="massInput" />
+    </div>
+    <div>
+        <label for="accelerationInput">Aceleração (a):</label>
+        <input type="number" id="accelerationInput" />
+    </div>
+
+    <!-- Botão para acionar o cálculo da força -->
+    <button onclick="calcularForca()">Calcular Força</button>
+
+    <!-- Espaço para exibir o resultado do cálculo -->
+    <p>A força é: <span id="resultadoForca"></span></p>
+
+    <script src="java.js"></script>
+</body>
+</html>
+
+
