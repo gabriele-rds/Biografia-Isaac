@@ -38,3 +38,34 @@ input[type="number"] {
 p {
     font-size: 18px; /* Especifique o tamanho da fonte desejado */
 }
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+@media screen and (max-width: 600px) {
+    /* Estilos para tamanhos menores de tela */
+    body {
+        font-size: 14px;
+    }
+    /* Outras alterações de layout conforme necessário */
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Aplicar a animação a um elemento */
+.elemento {
+    animation: fadeIn 1s ease;
+    /* Outros estilos */
+}

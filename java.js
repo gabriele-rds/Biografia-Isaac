@@ -1,4 +1,4 @@
-
+// Primeira Lei de Newton
 function verificarMovimento() {
     const massa = parseFloat(document.getElementById('massaInput').value);
     const aceleracao = parseFloat(document.getElementById('aceleracaoInput').value);
@@ -14,9 +14,8 @@ function verificarMovimento() {
         document.getElementById('movimentoOutput').textContent = 'em movimento uniforme';
     }
 }
-// Função para calcular a força com base na massa e aceleração inseridas
+// Segunda Lei de Newton
 function calcularForca() {
-    // Obtendo os valores de massa e aceleração dos campos de entrada
     const massa = parseFloat(document.getElementById('massInput').value);
     const aceleracao = parseFloat(document.getElementById('accelerationInput').value);
 
@@ -29,11 +28,9 @@ function calcularForca() {
 
     // Calculando a força usando a fórmula F = m * a
     const forca = massa * aceleracao;
-
-    // Exibindo o resultado da força na página HTML
-    // O resultado é exibido no elemento <span> com o id 'resultadoForca'
     document.getElementById('resultadoForca').textContent = forca.toFixed(2) + ' N'; // Exibindo o resultado com duas casas decimais
 }
+// Terceira Lei de Newton
 function calcularReacao() {
     const forcaDeAcao = parseFloat(document.getElementById('acaoInput').value);
 
