@@ -21,13 +21,17 @@
     flex: 1; /* Permite que o texto ocupe o espaço restante */
     padding: 0 20px; /* Espaçamento entre o texto e as imagens */
 }
-/* Definindo o fundo branco para os campos de entrada */
-#massInput,
-#accelerationInput {
+
+input[type="number"] {
     background-color: white;
-    /* Outros estilos opcionais */
-    color: black; /* Definindo a cor do texto para preto */
-    border: 1px solid #ccc; /* Adicionando uma borda para destacar o campo */
-    padding: 8px; /* Adicionando um espaçamento interno */
-    border-radius: 5px; /* Adicionando cantos arredondados */
+    color: black; /* Cor do texto */
+    border: 1px solid #ccc; /* Borda */
+    padding: 8px; /* Espaçamento interno */
+    border-radius: 5px; /* Cantos arredondados */
+}
+.imagem-lateral {
+    display: inline-block; /* Exibe a imagem como um elemento em linha */
+    width: 100px; /* Defina a largura da imagem conforme necessário */
+    height: auto; /* Altura automática para manter a proporção */
+    margin-left: 20px; /* Espaço à esquerda da imagem */
 }

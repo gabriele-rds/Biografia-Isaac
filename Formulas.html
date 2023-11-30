@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cálculo da Força</title>
+    <title>Leis de Newton</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -14,8 +14,31 @@
         <a href="Formulas.html">Fórmula</a>
         
     </nav>
+    <hr>
+    <h2>Primeira Lei de Newton - Lei da Inércia</h2>  
+    <div class="container">     
+    <p>
+        A primeira lei de Newton, também conhecida como a lei da inércia, afirma que um objeto permanecerá em repouso ou em movimento uniforme em linha reta, a menos que uma força externa atue sobre ele. 
+        <br>   
+        Em outras palavras, um objeto em repouso permanecerá em repouso e um objeto em movimento continuará a se mover em linha reta com velocidade constante, a menos que uma força externa atue sobre ele.
+        <br>
+        Na fórmula abaixo, tendo em vista a explicação, só há dois resultados. Repouso ou movimento.
+    </p>
+    <img src="images/isaac.jpeg" width="200px"alt="Isaac Newton">
+    </div>
+    <div>
+        <label for="massaInput">Massa (kg):</label>
+        <input type="number" id="massaInput" />
+    </div>
+    <div>
+        <label for="aceleracaoInput">Aceleração (m/s²):</label>
+        <input type="number" id="aceleracaoInput" />
+    </div>
+    <button onclick="verificarMovimento()">Verificar Movimento</button>
+    <p>O objeto está: <span id="movimentoOutput"></span></p>
     <!-- Seção explicativa sobre a Segunda Lei de Newton -->
     <h2>Segunda Lei de Newton</h2>
+    <div class="container">
     <p>
         A segunda lei de Newton é uma das leis fundamentais da física que descreve a relação entre a força aplicada a um objeto, sua massa e a aceleração resultante que o objeto adquire. É expressa pela fórmula matemática: 
         <br>
@@ -33,7 +56,9 @@
         <br>
         Esta lei é essencial para compreender o movimento de objetos sob a influência de forças.
     </p>
+    <img src="images/isaac-newton-meme.jpg" width="200px" alt="Isaac Newton meme">
     <!-- Campos de entrada para massa e aceleração -->
+    </div>
     <div>
         <label for="massInput">Massa (m):</label>
         <input type="number" id="massInput" />
@@ -45,10 +70,25 @@
 
     <!-- Botão para acionar o cálculo da força -->
     <button onclick="calcularForca()">Calcular Força</button>
+    
 
-    <!-- Espaço para exibir o resultado do cálculo -->
-    <p>A força é: <span id="resultadoForca"></span></p>
-
+    <h2>Terceira Lei de Newton - Lei da Ação e Reação</h2>
+    <div class="container">
+    <p>
+        A terceira lei de Newton, também conhecida como a lei da ação e reação, afirma que para cada ação, há uma reação igual e oposta.
+        Em outras palavras, quando um objeto A exerce uma força em um objeto B, o objeto B exerce uma força de mesma magnitude e direção oposta em A.
+        <br>
+        Essa lei é uma consequência da conservação do momento linear, que afirma que a quantidade de movimento de um sistema isolado permanece constante.
+    </p>
+    <img src="images/newron.jpeg" width="200px" alt="Isaac Newton meme">
+    </div>
+    <div>
+        <label for="acaoInput">Força de Ação (N):</label>
+        <input type="number" id="acaoInput" />
+    </div>
+    <button onclick="calcularReacao()">Calcular Força de Reação</button>
+    <p>Força de Reação: <span id="reacaoOutput"></span></p>
+    
     <script src="java.js"></script>
 </body>
 </html>
